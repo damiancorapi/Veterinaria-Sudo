@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Actividad Práctica</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
+</head>
+
+<body>
+    
+    <header>
+        <br>
+        <nav>
+            <a class="link" href="Index.html">Home</a> |
+            <a class="link" href="acerca.html">Acerca de</a> |
+            <a class="link" href="contacto.html">Contacto</a> |
+            <a class="link" href="#">Registro</a> |
+            <a class="link" href="sucursales.html">Sucursales</a>
+        </nav>
+        <h1>Taller Mecánico</h1>
+    </header>
+
+    <br>
+
+    <main>
+        <div class="formulario">
+        <h2>Formulario de Registro</h2>
+
+        <form action="show_data.html" target="_blank">
+            <div>
+                <label for="nombre"> Nombre: </label>
+                    <input type="text" name="nombre" required placeholder="Ingrese su nombre">
+                </div> <br>
+
+                <div>
+                <label for="apellido"> Apellido: </label>
+                    <input type="text" name="apellido" required placeholder="Ingrese su apellido">
+                </div> <br>
+
+                <div>
+                <label for="direccion"> Dirección: </label>
+                    <input type="text" name="direccion" placeholder="Ingrese su dirección">
+                </div> <br>
+
+                <div>
+                <label for="cuidad"> Ciudad: </label>
+                    <input type="text" name="cuidad" placeholder="Ingrese la cuidad">
+                </div> <br>
+
+                <div>
+                <label for="cp"> Código Postal: </label>
+                    <input type="text" name="cp" placeholder="Ingrese el CP.">
+                </div> <br>
+
+                <div>
+                    <label for="genero">Tipo de vehículo</label>
+                    <span class="radio1">
+                        <input type="radio" name="tipo" value="sedan"> Sedan
+                        <input type="radio" name="tipo" value="camioneta"> Camioneta
+                        <input type="radio" name="tipo" value="suv"> Suv
+                        <input type="radio" name="tipo" value="otro"> Otro
+                    </span>
+                </div> <br>
+
+                <div>
+                    <select name="Marca" id="">
+                        <option value="">Selecciona la marca</option>
+                        <option value="Fiat">Fiat</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div> <br>
+
+                <label for="modelo"> Modelo: </label>
+                    <input type="text" name="modelo" required placeholder="Ingrese el modelo">
+                </div> <br>
+
+                <div>
+                    <label for="papeles">¿Papeles al día?</label>
+                    <span class="radio2">
+                        <input type="radio" name="papeles" value="si"> Si
+                        <input type="radio" name="papeles" value="no"> No
+                    </span>
+                </div> <br>
+
+                <input type="submit" value="Enviar"> 
+                
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <a class="foot-img2" href="https://web.facebook.com/"><img class="foot-img" src="./Imagenes/facebook.png" alt="facebook"></a>
+            <a class="foot-img2" href="https://www.instagram.com/"><img class="foot-img" src="./Imagenes/instagram.png" alt="instagram"></a>
+            <a class="foot-img2" href="https://twitter.com/"><img class="foot-img" src="./Imagenes/tweeter.png" alt="tweeter"></a>
+            <a class="foot-img2" href="https://web.whatsapp.com/"><img class="foot-img" src="./Imagenes/whatsapp.jpg" alt="whatsapp"></a>
+        </div>
+        <p style="text-align: center; font-weight: 900; margin-top: 0;">Derechos reservados @2023</p>
+    </footer>
+</body>
+
+</html>
