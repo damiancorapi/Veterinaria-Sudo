@@ -1,0 +1,33 @@
+footer{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    height: 80px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer div {
+    margin-right: 20px;
+    padding: 5px 0px 0px 10px;
+}
+
+.foot-img{
+    width: 20px;
+    padding-left: 4px;
+}
+
+.foot-img2 :hover{
+    width: 30px;
+    height: 30px;
+}
+
+.mapa { 
+    margin-left: 40px;
+}
+
+.m1 { 
+    margin-right: 10px;
+}
