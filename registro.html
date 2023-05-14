@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML - Actividad Práctica</title>
+    <title>registro</title>
     <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"></head>
 </head>
 
 <body>
-    
+
     <header>
         <br>
         <nav>
@@ -18,30 +21,30 @@
             <a class="link" href="acerca.html">Acerca de</a> |
             <a class="link" href="contacto.html">Contacto</a> |
             <a class="link" href="#">Registro</a> |
-            <a class="link" href="sucursales.html">Sucursales</a>
+            <a class="link" href="sucursales.html">Ubicación</a>
         </nav>
-        <h1>Taller Mecánico</h1>
+        <h1>Veterinaria Sudo</h1>
     </header>
 
     <br>
 
-    <main>
+    <main class="form">
         <div class="formulario">
         <h2>Formulario de Registro</h2>
 
         <form action="show_data.html" target="_blank">
             <div>
-                <label for="nombre"> Nombre: </label>
+                <label for="nombre"> Nombre de su mascota: </label>
                     <input type="text" name="nombre" required placeholder="Ingrese su nombre">
                 </div> <br>
 
                 <div>
-                <label for="apellido"> Apellido: </label>
-                    <input type="text" name="apellido" required placeholder="Ingrese su apellido">
+                <label for="nombreDuenio"> Nombre Dueño : </label>
+                    <input type="text" name="raza" required placeholder="Ingrese su nombre">
                 </div> <br>
 
                 <div>
-                <label for="direccion"> Dirección: </label>
+                <label for="direccion"> dirección: </label>
                     <input type="text" name="direccion" placeholder="Ingrese su dirección">
                 </div> <br>
 
@@ -51,44 +54,38 @@
                 </div> <br>
 
                 <div>
-                <label for="cp"> Código Postal: </label>
-                    <input type="text" name="cp" placeholder="Ingrese el CP.">
-                </div> <br>
-
-                <div>
-                    <label for="genero">Tipo de vehículo</label>
+                    <label for="genero">Raza de su mascota</label>
                     <span class="radio1">
-                        <input type="radio" name="tipo" value="sedan"> Sedan
-                        <input type="radio" name="tipo" value="camioneta"> Camioneta
-                        <input type="radio" name="tipo" value="suv"> Suv
+                        <input type="radio" name="tipo" value="can"> Canino
+                        <input type="radio" name="tipo" value="felino"> Felino
+                        <input type="radio" name="tipo" value="ave"> Ave
                         <input type="radio" name="tipo" value="otro"> Otro
                     </span>
                 </div> <br>
 
                 <div>
-                    <select name="Marca" id="">
-                        <option value="">Selecciona la marca</option>
-                        <option value="Fiat">Fiat</option>
-                        <option value="Chevrolet">Chevrolet</option>
-                        <option value="Ford">Ford</option>
-                        <option value="Otro">Otro</option>
+                    <select name="sexo" id="">
+                        <option value="">Selecciona el sexo</option>
+                        <option value="macho">Macho</option>
+                        <option value="hembra">Hembra</option>
                     </select>
                 </div> <br>
 
-                <label for="modelo"> Modelo: </label>
-                    <input type="text" name="modelo" required placeholder="Ingrese el modelo">
+                <label for="tipoConsulta"> ¿Tipo de consulta?: </label>
+                    <input type="text" name="tipoConsulta" required placeholder="Ingrese el motivo de su consulta de forma breve">
                 </div> <br>
 
                 <div>
-                    <label for="papeles">¿Papeles al día?</label>
+                    <label for="papeles">¿Edad apróximada?</label>
                     <span class="radio2">
-                        <input type="radio" name="papeles" value="si"> Si
-                        <input type="radio" name="papeles" value="no"> No
+                        <input type="radio" name="edad" value="0"> Menos de 6 meses
+                        <input type="radio" name="edad" value="1"> Entre 6 meses y 1 año
+                        <input type="radio" name="edad" value="2"> Mas de 1 año
                     </span>
                 </div> <br>
 
-                <input type="submit" value="Enviar"> 
-                
+                <input type="submit" value="Enviar">
+
             </form>
         </div>
     </main>
@@ -100,7 +97,7 @@
             <a class="foot-img2" href="https://twitter.com/"><img class="foot-img" src="./Imagenes/tweeter.png" alt="tweeter"></a>
             <a class="foot-img2" href="https://web.whatsapp.com/"><img class="foot-img" src="./Imagenes/whatsapp.jpg" alt="whatsapp"></a>
         </div>
-        <p style="text-align: center; font-weight: 900; margin-top: 0;">Derechos reservados @2023</p>
+        <p>Derechos reservados @2023</p>
     </footer>
 </body>
 
