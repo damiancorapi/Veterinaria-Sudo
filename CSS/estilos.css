@@ -1,17 +1,55 @@
 footer{
-    margin-top: 20px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: black;
-    color: white;
-    height: 80px;
+    color: green;
+    height: 5%;
+    border-radius: 5%;
+
 }
 
 footer p {
-    text-align: center;
+    text-align:center;
+    font-size: 16px;
+    margin-top: 3%;
 }
 
 footer div {
-    margin-right: 20px;
-    padding: 5px 0px 0px 10px;
+    margin: 1%;
+    padding: 1% ;
+
+}
+
+body{
+  background-color:rgb(140, 90, 140);
+  background-image: url("../Imagenes/Revision-veterinaria.jpg");
+  font-family:'Fjalla One', sans-serif;
+}
+
+.form{
+  background-color:rgb(140, 90, 140);
+  margin-right: 70%;
+}
+
+.headerIndex{
+      background: rgba(140, 90, 140, 0.5);
+      margin-right: 50%;
+
+}
+
+.contacto{
+  background-color:rgb(140, 90, 140, 0.8);
+  color: black;
+  margin-right: 80%;
+}
+
+.horarios {
+  background-color:rgb(140, 90, 140, 0.5);
+  color: black;
+  margin-top: 5%;
+  margin-right:75%;
+  text-align: justify;
 }
 
 .foot-img{
@@ -24,10 +62,14 @@ footer div {
     height: 30px;
 }
 
-.mapa { 
-    margin-left: 40px;
+.mapa {
+    margin-left: 20px;
 }
 
-.m1 { 
+.m1 {
     margin-right: 10px;
+}
+
+h1{
+  animate__animated animate__bounce;
 }
