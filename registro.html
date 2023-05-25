@@ -5,90 +5,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registro</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="./CSS/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"></head>
-    <script src="https://kit.fontawesome.com/99cc92199c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/99cc92199c.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="Imagenes/Logo-Sudo.ico">      
 </head>
 
 <body>
 
-    <header>
-        <br>
+    <header class="headerIndex">
         <nav>
-            <a class="link" href="Index.html">Home</a> |
-            <a class="link" href="acerca.html">Acerca de</a> |
+            <br>
+            <a class="link" href="Index.html">Inicio</a> |
+            <a class="link" href="registro.html">Registro</a> |
             <a class="link" href="contacto.html">Contacto</a> |
-            <a class="link" href="#">Registro</a> |
-            <a class="link" href="sucursales.html">Ubicación</a>
+            <a class="link" href="acerca.html">Acerca de</a> |
+            <a class="link" href="mascotas.html">Mascotas</a> |
         </nav>
-        <h1>Veterinaria Sudo</h1>
+        <div class="header-container">
+            <img src="Imagenes/Logo-Sudo.png" alt="Logo Sudo" width="150" height="150">
+            <h1>VETERINARIA SUDO</h1>
     </header>
 
     <br>
 
-    <main class="form">
-        <div class="formulario">
-        <h2>Formulario de Registro</h2>
+    <main>
+        <section class="form">
+            <div class="formulario">
+                <h2>FORMULARIO DE REGISTRO</h2>
 
-        <form action="show_data.html" target="_blank">
-            <div>
-                <label for="nombre"> Nombre de su mascota: </label>
-                    <input type="text" name="nombre" required placeholder="Ingrese su nombre">
-                </div> <br>
+                <form action="show_data.html" target="_blank" id="myForm">
+                    <div>
+                        <label for="nombreDuenio">Nombre del dueño:</label>
+                        <input type="text" name="nombreDuenio" required placeholder="Ingrese su nombre">
+                    </div><br>             
 
-                <div>
-                <label for="nombreDuenio"> Nombre Dueño : </label>
-                    <input type="text" name="raza" required placeholder="Ingrese su nombre">
-                </div> <br>
+                    <div>
+                        <label for="nombre">Nombre de su mascota:</label>
+                        <input type="text" name="nombre" required placeholder="Ingrese el nombre de su mascota">
+                    </div><br>
+                 
+                    <div>
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" name="direccion" placeholder="Ingrese su dirección">
+                    </div><br>
 
-                <div>
-                <label for="direccion"> dirección: </label>
-                    <input type="text" name="direccion" placeholder="Ingrese su dirección">
-                </div> <br>
+                    <div>
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="text" name="ciudad" placeholder="Ingrese la ciudad">
+                    </div><br>
 
-                <div>
-                <label for="cuidad"> Ciudad: </label>
-                    <input type="text" name="cuidad" placeholder="Ingrese la cuidad">
-                </div> <br>
+                    <div>
+                        <label for="genero">Tipo de mascota</label>
+                        <span class="radio1">
+                            <input type="radio" name="tipo" value="can"> Canino
+                            <input type="radio" name="tipo" value="felino"> Felino
+                            <input type="radio" name="tipo" value="ave"> Ave
+                            <input type="radio" name="tipo" value="otro"> Otro
+                        </span>
+                    </div><br>
 
-                <div>
-                    <label for="genero">Raza de su mascota</label>
-                    <span class="radio1">
-                        <input type="radio" name="tipo" value="can"> Canino
-                        <input type="radio" name="tipo" value="felino"> Felino
-                        <input type="radio" name="tipo" value="ave"> Ave
-                        <input type="radio" name="tipo" value="otro"> Otro
-                    </span>
-                </div> <br>
+                    <div>
+                        <select name="sexo" id="">
+                            <option value="">Su mascota es:</option>
+                            <option value="macho">Macho</option>
+                            <option value="hembra">Hembra</option>
+                        </select>
+                    </div><br>
 
-                <div>
-                    <select name="sexo" id="">
-                        <option value="">Selecciona el sexo</option>
-                        <option value="macho">Macho</option>
-                        <option value="hembra">Hembra</option>
-                    </select>
-                </div> <br>
-
-                <label for="tipoConsulta"> ¿Tipo de consulta?: </label>
+                    <label for="tipoConsulta">Tipo de consulta:</label>
                     <input type="text" name="tipoConsulta" required placeholder="Ingrese el motivo de su consulta de forma breve">
-                </div> <br>
+                    <br><br>
 
-                <div>
-                    <label for="papeles">¿Edad apróximada?</label>
-                    <span class="radio2">
-                        <input type="radio" name="edad" value="0"> Menos de 6 meses
-                        <input type="radio" name="edad" value="1"> Entre 6 meses y 1 año
-                        <input type="radio" name="edad" value="2"> Mas de 1 año
-                    </span>
-                </div> <br>
+                    <div>
+                        <label for="papeles">Edad apróximada</label>
+                        <span class="radio2">
+                            <input type="radio" name="edad" value="0"> 0 a 6 meses
+                            <input type="radio" name="edad" value="1"> 6 meses a 1 año
+                            <input type="radio" name="edad" value="2"> Más de 1 año
+                        </span>
+                    </div><br>
 
-                <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar">
+                </form>
 
-            </form>
-        </div>
+                <div id="respuestaFormulario" style="display: none;">
+                    
+                    <p>Gracias por registrarse, nos comunicaremos a la brevedad.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -96,11 +106,20 @@
             <a class="foot-img2" href="https://web.facebook.com/"><img class="foot-img" src="./Imagenes/facebook.png" alt="facebook"></a>
             <a class="foot-img2" href="https://www.instagram.com/"><img class="foot-img" src="./Imagenes/instagram.png" alt="instagram"></a>
             <a class="foot-img2" href="https://twitter.com/"><img class="foot-img" src="./Imagenes/tweeter.png" alt="tweeter"></a>
-            <a class="foot-img2" href="https://web.whatsapp.com/"><img class="foot-img" src="./Imagenes/whatsapp.jpg" alt="whatsapp"></a>
+            <a class="foot-img2" href="https://web.whatsapp.com/"><img class="foot-img" src="./Imagenes/whatsapp.png" alt="whatsapp"></a>
         </div>
-        <p class="animate__animated animate__bounce">Derechos reservados @2023<br>
-           <i class="fa-solid fa-user-doctor" style="color: #FFFFFF;"></i> </p>
+        <p class="animate__animated animate__bounce">Veterinaria Sudo - © 2023 - Todos los derechos reservados<br>
+            <i class="fa-solid fa-user-doctor" style="color: #FFFFFF;"></i>
+        </p>
     </footer>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            document.getElementById('respuestaFormulario').style.display = 'block';
+        });
+    </script>
 </body>
 
 </html>
