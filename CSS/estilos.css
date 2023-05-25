@@ -121,7 +121,10 @@ footer {
   width: 20px;
   padding-left: 4px;
 }
-
+#breed_data img{
+	width:200px;
+	height:200px;
+  }
 @media (max-width: 600px) {
   .form {
     margin-right: 5%;
