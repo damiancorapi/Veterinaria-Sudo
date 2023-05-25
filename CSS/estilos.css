@@ -2,9 +2,10 @@ body {
   background-color: rgb(252, 248, 252);
   background-image: url("../Imagenes/Revision-veterinaria.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+  background-size: 100% auto;
   font-family: Arial, sans-serif;
-  background-position-x: left;
+  
 }
 
 .acercade {
@@ -88,7 +89,7 @@ ul.grid-container .h1 {
 }
 
 main p {
-  font-size: 15px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
@@ -108,7 +109,7 @@ main p {
 footer {
   background-color: rgba(140, 90, 140, 0.5);
   color: rgb(11, 12, 12);
-  padding: 15px;
+  padding: 10px;
   text-align: left;
   font-size: 15px;
   height: 30px;
@@ -128,6 +129,7 @@ footer {
 }
 
 @media (max-width: 600px) {
+
   .form {
     margin-right: 5%;
     margin-left: 5%;
