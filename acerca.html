@@ -61,6 +61,105 @@
     </main>
     <br><br>
 
+    <!-- contenedor para las imagenes tipo calesita -->
+<div class="container">
+
+    <!-- tamaño completo -->
+    <div class="img_calesita">
+      <div class="numbertext">1 / 6</div>
+        <img src="Imagenes/calesita1.jpg" style="width:100%">
+    </div>
+  
+    <div class="img_calesita">
+      <div class="numbertext">2 / 6</div>
+        <img src="Imagenes/calesita2.jpg" style="width:100%">
+    </div>
+  
+    <div class="img_calesita">
+      <div class="numbertext">3 / 6</div>
+        <img src="Imagenes/calesita3.jpg" style="width:100%">
+    </div>
+  
+    <div class="img_calesita">
+      <div class="numbertext">4 / 6</div>
+        <img src="Imagenes/calesita4.jpg" style="width:100%">
+    </div>
+  
+    <div class="img_calesita">
+      <div class="numbertext">5 / 6</div>
+        <img src="Imagenes/calesita5.jpg" style="width:100%">
+    </div>
+  
+    <div class="img_calesita">
+      <div class="numbertext">6 / 6</div>
+        <img src="Imagenes/calesita6.jpg" style="width:100%">
+    </div>
+  
+    <!-- boton adelante y atras-->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- texto de imagen -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- imagenes chicas -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="Imagenes/calesita1.jpg" style="width:100%" onclick="currentSlide(1)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Imagenes/calesita2.jpg" style="width:100%" onclick="currentSlide(2)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Imagenes/calesita3.jpg" style="width:100%" onclick="currentSlide(3)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Imagenes/calesita4.jpg" style="width:100%" onclick="currentSlide(4)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Imagenes/calesita5.jpg" style="width:100%" onclick="currentSlide(5)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Imagenes/calesita6.jpg" style="width:100%" onclick="currentSlide(6)" >
+      </div>
+    </div>
+  </div>
+
+<script> let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // adelante - atras
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // control imagenes mini
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("img_calesita");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    } </script>
+
+    
+    
     <footer>
         <div>
             <a class="foot-img2" href="https://web.facebook.com/"><img class="foot-img" src="./Imagenes/facebook.png" alt="facebook"></a>
