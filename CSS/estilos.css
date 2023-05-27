@@ -1,12 +1,26 @@
-body {
+.body {
   background-color: rgb(252, 248, 252);
   background-image: url("../Imagenes/Revision-veterinaria.jpg");
   background-repeat: no-repeat;
   background-position: left;
-  background-size: cover;
+  background-size: fixed;
   font-family: Arial, sans-serif;
   
+  
+  
 }
+
+.titulo {
+ 
+  transition: width 2s;
+}
+
+.titulo:hover {
+  width: 300px;
+  font-style: italic;
+  background: rgb(217, 115, 115);
+}
+
 
 .acercade {
   background-color: rgba(140, 90, 140, 0.8);
@@ -147,10 +161,27 @@ footer {
   nav a {
     margin-right: 5px;
   }
-  
-  
-  
-  
+
+  footer {
+    padding: 5px;
+  }
+
+  .foot-img {
+    width: 15px;
+    padding-left: 2px;
+  }
+
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
 
 
 .container {
@@ -235,15 +266,4 @@ footer {
 .active,
 .demo:hover {
   opacity: 1;
-}
-
-  footer {
-    padding: 5px;
-  }
-
-  .foot-img {
-    width: 15px;
-    padding-left: 2px;
-  }
-
 }
