@@ -5,9 +5,7 @@
   background-position: left;
   background-size: fixed;
   font-family: Arial, sans-serif;
-  
-  
-  
+
 }
 
 .titulo {
@@ -16,10 +14,32 @@
 }
 
 .titulo:hover {
-  width: 300px;
-  font-style: italic;
-  background: rgb(217, 115, 115);
+  width: 500px;
+  font-style:italic;
+  background: rgb(137, 37, 160);
+  font-weight: 400;
+  font-weight: bolder;
+  
 }
+
+
+
+
+.animacion_logo {
+  
+    
+    float: left;
+    margin: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+ 
+.animacion_logo:hover {
+    margin-top: 2px;
+}
+
+
 
 
 .acercade {
@@ -133,9 +153,24 @@ footer {
 }
 
 .foot-img {
-  width: 20px;
+  width: 50px;
+
   padding-left: 4px;
+
+
 }
+
+.foot-img:hover{
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5)
+}
+
+
+
+
 
 #breed_data img {
   width: 300px;
