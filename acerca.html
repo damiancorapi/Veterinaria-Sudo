@@ -1,39 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="./CSS/estilos.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="icon" href="Imagenes/Logo-Sudo.ico">
-          
-    <style>
-        .headerIndex {
-            margin-bottom: 20px;
-        }
 
-        .link {
-            text-decoration: none;
-        }
-    </style>
-</head>
 
-<body class = "body">
-    <header class="headerIndex">
-        <nav>
-            <br>
-            <a class="link" href="Index.html">Inicio</a> |
-            <a class="link" href="registro.html">Registro</a> |
-            <a class="link" href="contacto.html">Contacto</a> |
-            <a class="link" href="acerca.html">Acerca de</a> |
-            <a class="link" href="mascotas.html">Mascotas</a> 
-        </nav>
+</head >
+<div class="page-wrap">
+    <header class="page-header">
         <div class="header-container">
 
             <div class="animacion_logo">
@@ -45,11 +27,16 @@
             </div>
         </div>
     </header>
-
-    <br>
-
-    <main>
-
+    <nav class="page-nav">
+        <a class="link" href="Index.html">Inicio</a> |
+        <a class="link" href="registro.html">Registro</a> |
+        <a class="link" href="contacto.html">Contacto</a> |
+        <a class="link" href="acerca.html">Acerca de</a> |
+        <a class="link" href="mascotas.html">Mascotas</a> 
+    
+    </nav>
+    <main class="page-main">
+      <article>
         <div class="acercade">
 
             <h2>ACERCA DE NOSOTROS</h2>
@@ -63,11 +50,12 @@
             </p>
 
         </div>
-
+      </article>
     </main>
-    <br><br>
 
-<!-- contenedor para las imagenes tipo calesita -->
+    
+    <aside class="page-sidebar">
+      <!-- contenedor para las imagenes tipo calesita -->
 <div class="container">
 
     <!-- tamaño completo -->
@@ -101,14 +89,9 @@
         <img src="Imagenes/calesita6.jpg" style="width:100%">
     </div>
   
-    <!-- boton adelante y atras-->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
   
-    <!-- texto de imagen -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
+   
   
     <!-- imagenes chicas -->
     <div class="row">
@@ -164,9 +147,8 @@
       captionText.innerHTML = dots[slideIndex-1].alt;
     } </script>
 
-
-
-    <footer>
+    </aside>
+    <footer class="page-footer">
         <div>
             <a class="foot-img2" href="https://web.facebook.com/"><img class="foot-img" src="./Imagenes/facebook.png" alt="facebook"></a>
             <a class="foot-img2" href="https://www.instagram.com/"><img class="foot-img" src="./Imagenes/instagram.png" alt="instagram"></a>
@@ -177,7 +159,6 @@
         <p class="animate__animated animate__bounce">Veterinaria Sudo - © 2023 - Todos los derechos reservados<br>
          </p>
     </footer>
-</body>
-
+  </div>
 </html>
 
