@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -24,29 +24,37 @@
     </style>
 </head>
 
-<body class="body">
-    <header class="headerIndex">
-        <nav>
-            <br>
+    <body>
+    <div class="page-wrap">
+        <header class="page-header">
+            <div class="header-container">
+    
+                <div class="animacion_logo">
+                <img src="Imagenes/Logo-Sudo.png" alt="Logo Sudo" width="300" height="300"; >
+    
+            </div>
+               <div class= "titulo"> <h1>VETERINARIA SUDO</h1>
+    
+                </div>
+            </div>
+        </header>
+    
+    </body>
+
+
+    
+     <nav class="page-nav">
             <a class="link" href="Index.html">Inicio</a> |
             <a class="link" href="registro.html">Registro</a> |
             <a class="link" href="contacto.html">Contacto</a> |
             <a class="link" href="acerca.html">Acerca de</a> |
             <a class="link" href="mascotas.html">Mascotas</a> 
-        </nav>
-        <div class="header-container">
-            <div class="animacion_logo">
-                <img src="Imagenes/Logo-Sudo.png" alt="Logo Sudo" width="300" height="300";>
-    
-            </div>
-            <div class= "titulo"> <h1>VETERINARIA SUDO</h1>
+        
+    </nav>
 
-            </div>
-        </div>
-    </header>
-    <br>
 
-    <main>
+
+    <main class="page-main">
         <div id="banner-message">
             <p>Selecciona una raza</p>
 
@@ -163,16 +171,33 @@
     </script>
     <br><br>
 
-<footer>
-    <div>
-        <a class="foot-img2" href="https://web.facebook.com/"><img class="foot-img" src="./Imagenes/facebook.png" alt="facebook"></a>
-        <a class="foot-img2" href="https://www.instagram.com/"><img class="foot-img" src="./Imagenes/instagram.png" alt="instagram"></a>
-        <a class="foot-img2" href="https://twitter.com/"><img class="foot-img" src="./Imagenes/tweeter.png" alt="tweeter"></a>
-        <a class="foot-img2" href="https://web.whatsapp.com/"><img class="foot-img" src="./Imagenes/whatsapp.png" alt="whatsapp"></a>
-    </div>
+    <aside class="page-sidebar">
+        <div class="diasyhorarios">
+            <h2>DÍAS Y HORARIOS</h2>
+        </div>
     
-    <p class="animate__animated animate__bounce">Veterinaria Sudo - © 2023 - Todos los derechos reservados<br>
-     </p>
-</footer>
+        <ul class="grid-container">
+            <li class="grid-item">Lunes a viernes</li>
+            <li class="grid-item">9 a 18hs</li>
+            <li class="grid-item">Sábados</li>
+            <li class="grid-item">10 a 16hs</li>
+        </ul>
+   
+    </aside>
 
+
+
+
+    <footer class="page-footer">
+        <div>
+            <a class="foot-img2" href="https://web.facebook.com/"><img class="foot-img" src="./Imagenes/facebook.png" alt="facebook"></a>
+            <a class="foot-img2" href="https://www.instagram.com/"><img class="foot-img" src="./Imagenes/instagram.png" alt="instagram"></a>
+            <a class="foot-img2" href="https://twitter.com/"><img class="foot-img" src="./Imagenes/tweeter.png" alt="tweeter"></a>
+            <a class="foot-img2" href="https://web.whatsapp.com/"><img class="foot-img" src="./Imagenes/whatsapp.png" alt="whatsapp"></a>
+        </div>
+        
+        <p class="animate__animated animate__bounce">Veterinaria Sudo - © 2023 - Todos los derechos reservados<br>
+         </p>
+    </footer>
+  </div>
 </html>
