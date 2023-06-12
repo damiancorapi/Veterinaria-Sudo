@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/99cc92199c.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="Imagenes/Logo-Sudo.ico">      
+    <link rel="icon" href="Imagenes/Logo-Sudo.ico">
+          
 
     <style>
         .headerIndex {
@@ -23,72 +24,42 @@
             text-decoration: none;
         }
     </style>
-    </head>
+</head>
 
+<body>
 
-
-
-    <div class="page-wrap">
-        <header class="page-header">
-            <div class="header-container">
-    
-                <div class="animacion_logo">
-                <img src="Imagenes/Logo-Sudo.png" alt="Logo Sudo" width="300" height="300"; >
-    
-            </div>
-               <div class= "titulo"> <h1>VETERINARIA SUDO</h1>
-    
-                </div>
-            </div>
-        </header>
-    
-   
-
-
-
-
-    
-        <nav class="page-nav">
-            <a class="link" href="Index.html">Inicio</a> |
-            <a class="link" href="registro.html">Registro</a> |
-            <a class="link" href="contacto.html">Contacto</a> |
-            <a class="link" href="acerca.html">Acerca de</a> |
-            <a class="link" href="mascotas.html">Mascotas</a> 
-        
+    <header class="headerIndex">
+        <nav>
+            <br>
+            <a class="link" href="Index.html">Inicio</a>             
+            <a class="link" href="registro.html">Registro</a> 
+            <a class="link" href="contacto.html">Contacto</a> 
+            <a class="link" href="acerca.html">Acerca de</a> 
+            <a class="link" href="shop.html">Shop</a> 
         </nav>
+        <div class="header-container">
+            <img src="Imagenes/Logo-Sudo.png" alt="Logo Sudo" width="400">
+        </div>
+    </header>
 
+    <br>
 
-
-
-
-
-
-       
-
-
-
-
-    
-
-   
-
-        <main class="page-main">
+    <main>
         <section class="form">
-            
             <div class="formulario">
                 <h2>FORMULARIO DE REGISTRO</h2>
-
                 <form action="show_data.html" target="_blank" id="myForm">
+                    <br>
                     <div>
                         <label for="nombreDuenio">Nombre del dueño:</label>
-                        <input type="text" name="nombreDuenio" id="nombreDuenio"  placeholder="Ingrese su nombre">
+                        <input type="text" name="nombreDuenio" id="nombreDuenio" placeholder="Ingrese su nombre">
                         <span id="errorNombreDuenio" class="error-message"></span>
                     </div><br>             
 
                     <div>
                         <div>
                             <label for="correo">Correo electrónico:</label>
-                            <input type="email" name="correo" id="correo"  placeholder="Ingrese su correo electrónico">
+                            <input type="email" name="correo" id="correo" placeholder="Ingrese su correo electrónico">
                             <span id="errorCorreo" class="error-message"></span>
                         </div><br>
                                       
@@ -103,7 +74,7 @@
                     </div><br>
 
                     <label for="nombre">Nombre de su mascota:</label>
-                    <input type="text" name="nombre" id="nombre"  placeholder="Ingrese el nombre de su mascota">
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre de su mascota">
                     <span id="errorNombreMascota" class="error-message"></span>
                 </div><br>
 
@@ -126,7 +97,7 @@
                     </div><br>
 
                     <label for="tipoConsulta">Tipo de consulta:</label>
-                    <input type="text" name="tipoConsulta" id="tipoConsulta"  placeholder="Ingrese el motivo de su consulta de forma breve">
+                    <input type="text" name="tipoConsulta" id="tipoConsulta" placeholder="Ingrese el motivo de su consulta de forma breve">
                     <span id="errorTipoConsulta" class="error-message"></span>
                     <br><br>
 
@@ -142,36 +113,17 @@
                     <input type="submit" value="Enviar">
                 </form>
 
+                <br>
+
                 <div id="respuestaFormulario" style="display: none;">                    
                     <p>Gracias por registrarse, nos comunicaremos a la brevedad.</p>
                 </div>
             </div>
         </section>
     </main>
-    <br><br>
+    <br>
 
-
-
-    <aside class="page-sidebar">
-        <div class="diasyhorarios">
-            <h2>DÍAS Y HORARIOS</h2>
-        </div>
-    
-        <ul class="grid-container">
-            <li class="grid-item">Lunes a viernes</li>
-            <li class="grid-item">9 a 18hs</li>
-            <li class="grid-item">Sábados</li>
-            <li class="grid-item">10 a 16hs</li>
-        </ul>
-   
-    </aside>
-
-
-
-
-    
-
-    <footer class="page-footer">
+    <footer>
         <div>
             <a class="foot-img2" href="https://web.facebook.com/"><img class="foot-img" src="./Imagenes/facebook.png" alt="facebook"></a>
             <a class="foot-img2" href="https://www.instagram.com/"><img class="foot-img" src="./Imagenes/instagram.png" alt="instagram"></a>
@@ -182,14 +134,11 @@
         <p class="animate__animated animate__bounce">Veterinaria Sudo - © 2023 - Todos los derechos reservados<br>
          </p>
     </footer>
-  </div>
-
 
     <script>
         document.getElementById('myForm').addEventListener('submit', function(event) {
             event.preventDefault();
-            
-            // Realizar la validación antes de enviar el formulario
+    
             if (validarFormulario()) {
                 document.getElementById('respuestaFormulario').style.display = 'block';
             }
@@ -218,8 +167,6 @@
             if (nombreDuenio === '') {
                 errorNombreDuenio.textContent = 'Ingrese su nombre';
                 isValid = false;
-                
-
             }
 
             if (correo === '') {
@@ -240,7 +187,6 @@
             return isValid;
         }
     </script>
-
+</body>
 
 </html>
-
